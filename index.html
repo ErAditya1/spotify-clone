@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify || Home</title>
+
+    <!-- font awasom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrao cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="background-dark popins">
+    <div class="container-fluid">
+        <!-- Nav Bar -->
+        <div class="row ">
+            <div class="col-sm-12 p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark  p-0">
+                    <div class="container-fluid">
+                        <a class="navbar-brand my-auto d-flex align-items-center justifu-content-center " href="/"><i
+                                class="fa-brands fa-spotify fs-1 text-success"></i>
+                            <p class="my-auto m-0 fw-semibold mx-2">Spotify</p>
+                        </a>
+                        <a class="text-white" aria-current="page" href="#">
+                            <div class="background-secondary p-2 rounded-circle home-icon"><i
+                                    class="fa-solid fa-house-chimney fs-5  "></i></div></i>
+                        </a>
+                        <form class="d-flex mx-1" role="search">
+
+                            <div class="search-container position-relative d-flex align-items-center">
+                                <button class=" search-button position-absolute d-flex align-items-center" type="submit"
+                                    style="border:none;"><i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <input class="form-control w-fit background-secondary search-input" type="search"
+                                    placeholder="What do you want to paly?" aria-label="Search" />
+                                <div style="height: 25px; width: 1px; right: 45px;"
+                                    class="position-absolute right-0 border"></div>
+                                <button class="folder-button position-absolute d-flex align-items-center">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  d-flex align-items-center">
+
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold text-secondary " href="#">Premium</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold text-secondary" href="#">Support</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold text-secondary" href="#">Download</a>
+                                </li>
+                                <div style="height: 25px; width: 1px; right: 45px;" class="mx-2 right-0 border"></div>
+                                <li class="nav-item d-flex justifu-content-center align-items-center">
+                                    <i class="fa-solid fa-circle-down"></i> <a
+                                        class="nav-link fw-semibold text-secondary" href="#">Install App</a>
+                                </li>
+                                <li class="nav-item signup">
+                                    <a class="nav-link fw-bold text-secondary" href="#">Sign up</a>
+                                </li>
+
+                                <li class="nav-item signup">
+                                    <a class="nav-link " aria-disabled="true" href="/">
+                                        <button class="btn bg-white text-black fw-bold rounded-5 px-4">
+                                            Login
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Main body -->
+        <div class="row main-body px-1 ">
+            <div class="col-sm-4 p-1 ">
+                <div class="background-secondary h-full left-section">
+                    <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                        style="height: 70px;">
+                        <p class="fs-6 fw-semibold m-0">Your Library</p>
+                        <p class="m-0 fs-3"><i class="fa-solid fa-circle-plus"></i></p>
+                    </div>
+                    <div style=" overflow: auto;">
+                        <div class="p-3 d-flex flex-column gap-4 " style="height: fit-content;">
+                            <div class=" card-background px-4 py-4  rounded-3">
+                                <div class="mb-4">
+                                    <p class="fs-6 fw-bold my-1">Create your first playlist</p>
+                                    <p class="my-1" style="font-size: 14px;">It's easy, we'll help you</p>
+                                </div>
+                                <button class="white-rounded-button"> Create Playlist</button>
+                            </div>
+                            <div class=" card-background px-4 py-4  rounded-3">
+                                <div class="mb-4">
+                                    <p class="fs-6 fw-bold my-1">Let's find some podcast to follow</p>
+                                    <p class="my-1" style="font-size: 14px;">We will keep you updated on new podcats</p>
+                                </div>
+                                <button class="white-rounded-button"> Create Playlist</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-8 p-1 h-full" style="height: 100vh; overflow-y: scroll;">
+                <div class="background-secondary h-full  right-section ">
+                    <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                        style="height: 70px;">
+                        <p class="fs-6 fw-bold m-0">Trending Songs</p>
+                        <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                class="fa-solid fa-angle-right"></i></p>
+                    </div>
+                    <div class="container-fluid popular-music-section pt-4">
+                        <div class="music-scroll-wrapper">
+                            <div class="d-flex flex-nowrap gap-3 overflow-auto">
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e02476952a677b4043a8f12e5ff"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e02671688fecb68803a14be89ad"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e027d604cf02543181aca3ea11f"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e026724a21713a8fb7698b6d9cf"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e02ce3eecb6ce4eb1dfb6e06399"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.scdn.co/image/ab67616d0000b273de304c180ef038f79d317db4"
+                                            alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                                <div class="music-card card-background">
+                                    <div class="image">
+                                        <img src="https://i.ytimg.com/vi/ZrnrodlSkeQ/hqdefault.jpg" alt="music image">
+                                        <div class="play-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="music-card-body">
+                                        <p class="head"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                        <p class="desc"><a href="#">Shri Krishna Govind Hare Murari</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="popular-artists-section">
+                        <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                            style="height: 70px;">
+                            <p class="fs-6 fw-bold m-0">Popular Artist</p>
+                            <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                    class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="d-flex flex-nowrap gap-3 overflow-auto py-4">
+
+                            <!-- Artist Card -->
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhX9Uu9VBx2wasgXtGFBFxrETKZErKoiuNw&s"
+                                        alt="Arijit Singh">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Arijit Singh</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvs14gR93koVoaYg0RisjV8g8n5X9xxXRUUg&s"
+                                        alt="Shreya Ghoshal">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Shreya Ghoshal</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTwwAwKoTzSzsCfZbnGC1eG4RNUXwAEr1yA&s"
+                                        alt="Armaan Malik">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Armaan Malik</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://images.unsplash.com/photo-1517230878791-4d28214057c2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2VyfGVufDB8fDB8fHww"
+                                        alt="Neha Kakkar">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Neha Kakkar</p>
+                            </div>
+                            <!-- Artist Card -->
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4"
+                                        alt="Arijit Singh">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Arijit Singh</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                        alt="Shreya Ghoshal">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Shreya Ghoshal</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                        alt="Armaan Malik">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Armaan Malik</p>
+                            </div>
+
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e"
+                                        alt="Neha Kakkar">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="artist-name">Neha Kakkar</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popular-albums-section">
+                        <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                            style="height: 70px;">
+                            <p class="fs-6 fw-bold m-0">Popular Album Section</p>
+                            <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                    class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="d-flex flex-nowrap gap-3 overflow-auto py-4">
+
+                            <!-- Album Card -->
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e0283141000ee8ce3b893a0b425"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20241019/pngtree-abstract-music-notes-on-blue-background-image_16297270.jpg"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popular-albums-section">
+                        <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                            style="height: 70px;">
+                            <p class="fs-6 fw-bold m-0">Popular Radio</p>
+                            <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                    class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="d-flex flex-nowrap gap-3 overflow-auto py-4">
+
+                            <!-- Album Card -->
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2yel0on0WEDYtxttW7qppP/en"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popular-albums-section">
+                        <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                            style="height: 70px;">
+                            <p class="fs-6 fw-bold m-0">Featured Charts</p>
+                            <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                    class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="d-flex flex-nowrap gap-3 overflow-auto py-4">
+
+                            <!-- Album Card -->
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popular-albums-section">
+                        <div class="p-3 px-4 d-flex justify-content-between align-items-center w-full  library-heading"
+                            style="height: 70px;">
+                            <p class="fs-6 fw-bold m-0">India's Best</p>
+                            <p class="m-0  fw-semibold" style="font-size: 14px; cursor: pointer;">Show all <i
+                                    class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="d-flex flex-nowrap gap-3 overflow-auto py-4">
+
+                            <!-- Album Card -->
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f000000024d7427796025bb3dd7841237"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name p-2">Tum Hi Ho</p>
+                                <p class="album-artist p-2">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f000000020e0773869c6154649d88fd61"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f0000000216172a4c16384e98991092bd"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f0000000246c84b4752ea93c6350ed427"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f0000000290115ca1fa5ada34861f6a85"
+                                        alt="Tum Hi Ho Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Tum Hi Ho</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f00000002ed9af7974cb083220f850e72"
+                                        alt="Deva Deva Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Deva Deva</p>
+                                <p class="album-artist">Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f00000002665f3dd41399b0e59bf827ac"
+                                        alt="Kesariya Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Kesariya</p>
+                                <p class="album-artist">Pritam, Arijit Singh</p>
+                            </div>
+
+                            <div class="album-card">
+                                <div class="album-image">
+                                    <img src="https://i.scdn.co/image/ab67706f0000000241d850fa743e1ebf012a686e"
+                                        alt="Raataan Lambiyan Album">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="album-name">Raataan Lambiyan</p>
+                                <p class="album-artist">Jubin Nautiyal, Asees Kaur</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <footer class="spotify-footer">
+                        <div class="">
+
+
+                            <div class="row p-0">
+                                <div class="footer-logo mb-3  col-md-3">
+                                    <h4 class="m-0 text-white fw-bold d-flex align-items-center mb-3">
+                                        <i class="fa-brands fa-spotify fs-1 text-success"></i> MySpotify
+                                    </h4>
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                </div>
+
+                                <div class="d-flex flex-column nav mb-3 col-md-3">
+                                    <h4 class="fw-semibold fs-6">Communities</h4>
+                                    <ul class="footer-list">
+                                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Premium</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex flex-column nav mb-3 col-md-3">
+                                    <h4 class="fw-semibold fs-6">Spotify Plans</h4>
+                                    <ul class="footer-list">
+                                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Premium</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div
+                                    class="footer-social d-flex gap-3 col-md-3 d-flex flex-column justifu-content-center align-items-center center">
+                                    <h4 class="fw-semibold fs-6">Social Icons</h4>
+                                    <div class="d-flex">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center py-3 border-top border-secondary text-white small">
+                            © 2025 MySpotify. All Rights Reserved. Developed by Aditya Kumar
+                        </div>
+                    </footer>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

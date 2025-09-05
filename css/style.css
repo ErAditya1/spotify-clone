@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-dark {
+    background: #000;
+    color: #fff;
+}
+
+.background-secondary {
+    background: #111010;
+}
+
+.card-background {
+    background: #211e1e9e;
+}
+
+.popins {
+    font-family: "Poppins", sans-serif;
+}
+
+.home-icon {
+    transition: 0.2s;
+}
+
+.home-icon:hover {
+    transform: scale(1.05);
+}
+
+.search-container .search-button {
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 0;
+    height: 20px;
+    background: transparent;
+    color: #fff;
+
+}
+
+.search-container .search-button i {
+    background: transparent;
+}
+
+.search-input {
+    border-radius: 24px;
+    color: #fff !important;
+    padding-left: 40px;
+    padding-right: 50px;
+    width: 400px;
+}
+
+.search-input:focus {
+    background-color: #1f1d1d;
+}
+
+.search-input::placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+
+.folder-button {
+    right: 0;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 0;
+    height: 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.main-body {
+
+    height: calc(100vh - 60px);
+
+}
+
+.main-body .left-section,
+.main-body .right-section {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.library-heading {
+    box-shadow: 5px 5px 20px #000;
+    border-radius: 10px 10px 0 0 !important;
+
+}
+
+.library-heading p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-item a {
+    font-size: 14px;
+}
+
+.nav-item a:hover {
+    color: white !important;
+}
+
+.nav-item {
+    transition: .5s;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.white-rounded-button {
+
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: .5s;
+    padding: 3px 8px;
+    font-weight: 600;
+}
+
+.music-card {
+    width: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.music-card .image {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+
+.music-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-btn {
+
+    background: green;
+
+    opacity: 1;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    margin-top: 180px;
+    margin-left: 150px;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+
+.play-btn svg {
+    width: 40px;
+    height: 40px;
+    fill: black;
+}
+
+.music-card:hover .play-btn {
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 130px;
+}
+
+
+.music-card-body {
+    padding: 12px;
+}
+
+.music-card-body .head {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.music-card-body .desc {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.music-card-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.music-card-body a:hover {
+    color: #1db954;
+}
+
+.music-scroll-wrapper {
+    padding-bottom: 10px;
+}
+
+.music-scroll-wrapper .d-flex {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.music-card {
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+}
+
+.music-card .image {
+    position: relative;
+    height: 180px;
+}
+
+.popular-artists-section .d-flex {
+    scrollbar-width: none;
+}
+
+.artist-card {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+    background-color: hsl(0, 5%, 12%);
+
+}
+.artist-card:hover .play-btn {
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 10px;
+}
+
+.artist-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px auto;
+}
+
+.artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.artist-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.popular-albums-section {
+    padding: 20px 0;
+    color: #fff;
+}
+
+.popular-albums-section .d-flex {
+    scrollbar-width: none;
+}
+
+
+
+.album-card {
+    flex: 0 0 auto;
+    width: 160px;
+    cursor: pointer;
+    transition:  0.3s ease;
+    
+}
+
+
+
+.album-card:hover .play-btn {
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 110px;
+    margin-left: 110px;
+}
+
+.album-image {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .album-card .play-btn{
+    margin: 0;
+}  */
+
+
+.album-card:hover .play-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.play-btn svg {
+    width: 40px;
+    height: 40px;
+    fill: #1db954;
+}
+
+.album-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0 2px 0;
+    color: #fff;
+}
+
+.album-artist {
+    font-size: 13px;
+    color: #aaa;
+    margin: 0;
+}
+
+.spotify-footer ul li {
+    list-style: none;
+}
+
+.spotify-footer ul li a {
+    color: white;
+}
+
+.album-card:hover {
+    background: #252424;
+    border-radius: 10px;
+}
